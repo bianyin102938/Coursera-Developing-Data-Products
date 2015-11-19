@@ -1,20 +1,16 @@
 # setwd("./Desktop/Online Coursera/Coursera-Developing-Data-Products/project/")
 
-# Load required libraries
 require(data.table)
 # library(sqldf)
 library(dplyr)
 library(DT)
 library(rCharts)
 
-# Read data
 data <- fread("./data/sets.csv")
 head(data)
 setnames(data, "t1", "theme")
 setnames(data, "descr", "name")
 setnames(data, "set_id", "setId")
-# data$miniFigure <- as.numeric(data$theme=="Collectible Minifigures")
-# Exploratory data analysis
 sum(is.na(data)) # 0
 length(unique(data$setId)) # 10418
 table(data$year) # 1950 - 2015
@@ -25,7 +21,6 @@ themes <- sort(unique(data$theme))
 # sqldf("SELECT distinct year FROM data") 
 
 
-## Helper functions
 
 #' Aggregate dataset by year
 #' 
