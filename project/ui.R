@@ -1,4 +1,3 @@
-# The user-interface definition of the Shiny web app.
 library(shiny)
 library(BH)
 library(rCharts)
@@ -6,7 +5,6 @@ require(markdown)
 require(data.table)
 library(dplyr)
 library(DT)
-
 shinyUI(
     navbarPage("LEGO Set Visualizer", 
     # multi-page user-interface that includes a navigation bar.
@@ -55,8 +53,7 @@ shinyUI(
                  )
                    
             )     
-        ), # end of "Explore Dataset" tab panel
-    
+        ), # end of "Explore Dataset" tab panel   
         tabPanel(p(icon("search"), "LookUp on Brickset Website"),
              mainPanel(
                  h4("The page popped-up is the LEGO set database on Brickset.com."),
@@ -79,12 +76,11 @@ shinyUI(
                  
              )         
         ),
-        
-        tabPanel("About",
+             tabPanel("About",
                  mainPanel(
                    includeMarkdown("about.md")
                  )
-        ) # end of "About" tab panel
+        ) 
     )
   
 )

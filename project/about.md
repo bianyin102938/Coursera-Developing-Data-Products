@@ -7,4 +7,4 @@ Data Source: http://rebrickable.com/downloads
 **Note**: Since I didn't use the API to collect data, the current data might not be 100% accurate.  
 Date updated: 08/04/2015
   
-About author: [xiaodanzhang.com](http://xiaodanzhang.com)
+About author: [Yin Bian.com](http://yinbian.com)
