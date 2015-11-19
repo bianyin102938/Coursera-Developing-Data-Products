@@ -1,7 +1,9 @@
 .DS_Store
 .Rhistory
+
 /lectures
 .Rproj.user
 .RData
+
 *.Rproj
 shinyapp
